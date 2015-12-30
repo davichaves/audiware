@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B56122911C3470FE0019A802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122901C3470FE0019A802 /* AppDelegate.swift */; };
+		B56122931C3470FE0019A802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122921C3470FE0019A802 /* ViewController.swift */; };
+		B56122961C3470FE0019A802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56122941C3470FE0019A802 /* Main.storyboard */; };
+		B56122981C3470FE0019A802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56122971C3470FE0019A802 /* Assets.xcassets */; };
+		B561229B1C3470FE0019A802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56122991C3470FE0019A802 /* LaunchScreen.storyboard */; };
+		B56122A61C3470FF0019A802 /* AudiwareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122A51C3470FF0019A802 /* AudiwareTests.swift */; };
+		B56122B11C3470FF0019A802 /* AudiwareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122B01C3470FF0019A802 /* AudiwareUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B56122A21C3470FF0019A802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56122851C3470FE0019A802 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B561228C1C3470FE0019A802;
+			remoteInfo = Audiware;
+		};
+		B56122AD1C3470FF0019A802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56122851C3470FE0019A802 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B561228C1C3470FE0019A802;
+			remoteInfo = Audiware;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B561228D1C3470FE0019A802 /* Audiware.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audiware.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56122901C3470FE0019A802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B56122921C3470FE0019A802 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B56122951C3470FE0019A802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B56122971C3470FE0019A802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B561229A1C3470FE0019A802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B561229C1C3470FE0019A802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B56122A11C3470FF0019A802 /* AudiwareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudiwareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56122A51C3470FF0019A802 /* AudiwareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiwareTests.swift; sourceTree = "<group>"; };
+		B56122A71C3470FF0019A802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B56122AC1C3470FF0019A802 /* AudiwareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudiwareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56122B01C3470FF0019A802 /* AudiwareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiwareUITests.swift; sourceTree = "<group>"; };
+		B56122B21C3470FF0019A802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B561228A1C3470FE0019A802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B561229E1C3470FF0019A802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56122A91C3470FF0019A802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B56122841C3470FE0019A802 = {
+			isa = PBXGroup;
+			children = (
+				B561228F1C3470FE0019A802 /* Audiware */,
+				B56122A41C3470FF0019A802 /* AudiwareTests */,
+				B56122AF1C3470FF0019A802 /* AudiwareUITests */,
+				B561228E1C3470FE0019A802 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B561228E1C3470FE0019A802 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B561228D1C3470FE0019A802 /* Audiware.app */,
+				B56122A11C3470FF0019A802 /* AudiwareTests.xctest */,
+				B56122AC1C3470FF0019A802 /* AudiwareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B561228F1C3470FE0019A802 /* Audiware */ = {
+			isa = PBXGroup;
+			children = (
+				B56122901C3470FE0019A802 /* AppDelegate.swift */,
+				B56122921C3470FE0019A802 /* ViewController.swift */,
+				B56122941C3470FE0019A802 /* Main.storyboard */,
+				B56122971C3470FE0019A802 /* Assets.xcassets */,
+				B56122991C3470FE0019A802 /* LaunchScreen.storyboard */,
+				B561229C1C3470FE0019A802 /* Info.plist */,
+			);
+			path = Audiware;
+			sourceTree = "<group>";
+		};
+		B56122A41C3470FF0019A802 /* AudiwareTests */ = {
+			isa = PBXGroup;
+			children = (
+				B56122A51C3470FF0019A802 /* AudiwareTests.swift */,
+				B56122A71C3470FF0019A802 /* Info.plist */,
+			);
+			path = AudiwareTests;
+			sourceTree = "<group>";
+		};
+		B56122AF1C3470FF0019A802 /* AudiwareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B56122B01C3470FF0019A802 /* AudiwareUITests.swift */,
+				B56122B21C3470FF0019A802 /* Info.plist */,
+			);
+			path = AudiwareUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B561228C1C3470FE0019A802 /* Audiware */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B56122B51C3470FF0019A802 /* Build configuration list for PBXNativeTarget "Audiware" */;
+			buildPhases = (
+				B56122891C3470FE0019A802 /* Sources */,
+				B561228A1C3470FE0019A802 /* Frameworks */,
+				B561228B1C3470FE0019A802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Audiware;
+			productName = Audiware;
+			productReference = B561228D1C3470FE0019A802 /* Audiware.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B56122A01C3470FF0019A802 /* AudiwareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B56122B81C3470FF0019A802 /* Build configuration list for PBXNativeTarget "AudiwareTests" */;
+			buildPhases = (
+				B561229D1C3470FF0019A802 /* Sources */,
+				B561229E1C3470FF0019A802 /* Frameworks */,
+				B561229F1C3470FF0019A802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B56122A31C3470FF0019A802 /* PBXTargetDependency */,
+			);
+			name = AudiwareTests;
+			productName = AudiwareTests;
+			productReference = B56122A11C3470FF0019A802 /* AudiwareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B56122AB1C3470FF0019A802 /* AudiwareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B56122BB1C3470FF0019A802 /* Build configuration list for PBXNativeTarget "AudiwareUITests" */;
+			buildPhases = (
+				B56122A81C3470FF0019A802 /* Sources */,
+				B56122A91C3470FF0019A802 /* Frameworks */,
+				B56122AA1C3470FF0019A802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B56122AE1C3470FF0019A802 /* PBXTargetDependency */,
+			);
+			name = AudiwareUITests;
+			productName = AudiwareUITests;
+			productReference = B56122AC1C3470FF0019A802 /* AudiwareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B56122851C3470FE0019A802 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = davichaves;
+				TargetAttributes = {
+					B561228C1C3470FE0019A802 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B56122A01C3470FF0019A802 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B561228C1C3470FE0019A802;
+					};
+					B56122AB1C3470FF0019A802 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B561228C1C3470FE0019A802;
+					};
+				};
+			};
+			buildConfigurationList = B56122881C3470FE0019A802 /* Build configuration list for PBXProject "Audiware" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B56122841C3470FE0019A802;
+			productRefGroup = B561228E1C3470FE0019A802 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B561228C1C3470FE0019A802 /* Audiware */,
+				B56122A01C3470FF0019A802 /* AudiwareTests */,
+				B56122AB1C3470FF0019A802 /* AudiwareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B561228B1C3470FE0019A802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B561229B1C3470FE0019A802 /* LaunchScreen.storyboard in Resources */,
+				B56122981C3470FE0019A802 /* Assets.xcassets in Resources */,
+				B56122961C3470FE0019A802 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B561229F1C3470FF0019A802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56122AA1C3470FF0019A802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B56122891C3470FE0019A802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56122931C3470FE0019A802 /* ViewController.swift in Sources */,
+				B56122911C3470FE0019A802 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B561229D1C3470FF0019A802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56122A61C3470FF0019A802 /* AudiwareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56122A81C3470FF0019A802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56122B11C3470FF0019A802 /* AudiwareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B56122A31C3470FF0019A802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B561228C1C3470FE0019A802 /* Audiware */;
+			targetProxy = B56122A21C3470FF0019A802 /* PBXContainerItemProxy */;
+		};
+		B56122AE1C3470FF0019A802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B561228C1C3470FE0019A802 /* Audiware */;
+			targetProxy = B56122AD1C3470FF0019A802 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B56122941C3470FE0019A802 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B56122951C3470FE0019A802 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B56122991C3470FE0019A802 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B561229A1C3470FE0019A802 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B56122B31C3470FF0019A802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B56122B41C3470FF0019A802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B56122B61C3470FF0019A802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Audiware/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davichaves.Audiware;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B56122B71C3470FF0019A802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Audiware/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davichaves.Audiware;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B56122B91C3470FF0019A802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AudiwareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davichaves.AudiwareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audiware.app/Audiware";
+			};
+			name = Debug;
+		};
+		B56122BA1C3470FF0019A802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AudiwareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davichaves.AudiwareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audiware.app/Audiware";
+			};
+			name = Release;
+		};
+		B56122BC1C3470FF0019A802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AudiwareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davichaves.AudiwareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Audiware;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B56122BD1C3470FF0019A802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AudiwareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davichaves.AudiwareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Audiware;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B56122881C3470FE0019A802 /* Build configuration list for PBXProject "Audiware" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56122B31C3470FF0019A802 /* Debug */,
+				B56122B41C3470FF0019A802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B56122B51C3470FF0019A802 /* Build configuration list for PBXNativeTarget "Audiware" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56122B61C3470FF0019A802 /* Debug */,
+				B56122B71C3470FF0019A802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B56122B81C3470FF0019A802 /* Build configuration list for PBXNativeTarget "AudiwareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56122B91C3470FF0019A802 /* Debug */,
+				B56122BA1C3470FF0019A802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B56122BB1C3470FF0019A802 /* Build configuration list for PBXNativeTarget "AudiwareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56122BC1C3470FF0019A802 /* Debug */,
+				B56122BD1C3470FF0019A802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B56122851C3470FE0019A802 /* Project object */;
+}
