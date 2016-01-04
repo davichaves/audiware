@@ -17,39 +17,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9L-kh-dAN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9L-kh-dAN">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Record Button"/>
+                                <state key="normal" image="microphone"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XA0-Zr-dNM"/>
+                                    <action selector="recordAudioEnded:" destination="BYZ-38-t0r" eventType="touchCancel" id="DTp-xZ-bNe"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdL-LP-dm6">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJe-eQ-sZG">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="stop"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="175" y="542" width="50" height="50"/>
+                                </variation>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ELo-CT-SPL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DJe-eQ-sZG" firstAttribute="top" secondItem="VdL-LP-dm6" secondAttribute="bottom" constant="8" symbolic="YES" id="MHl-6w-rNQ"/>
+                            <constraint firstItem="VdL-LP-dm6" firstAttribute="top" secondItem="E9L-kh-dAN" secondAttribute="bottom" constant="14" id="MwQ-C6-zlt"/>
                             <constraint firstItem="E9L-kh-dAN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P4W-JY-oxP"/>
+                            <constraint firstItem="DJe-eQ-sZG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SxG-3t-fHk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DJe-eQ-sZG" secondAttribute="bottom" constant="8" symbolic="YES" id="d79-FY-RX9"/>
                             <constraint firstItem="E9L-kh-dAN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="plj-w7-vNI"/>
+                            <constraint firstItem="VdL-LP-dm6" firstAttribute="centerX" secondItem="E9L-kh-dAN" secondAttribute="centerX" id="szm-pV-c5Z"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="E9L-kh-dAN"/>
+                                <exclude reference="VdL-LP-dm6"/>
+                                <exclude reference="DJe-eQ-sZG"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="P4W-JY-oxP"/>
                                 <exclude reference="plj-w7-vNI"/>
+                                <exclude reference="MwQ-C6-zlt"/>
+                                <exclude reference="szm-pV-c5Z"/>
+                                <exclude reference="MHl-6w-rNQ"/>
+                                <exclude reference="SxG-3t-fHk"/>
+                                <exclude reference="d79-FY-RX9"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="E9L-kh-dAN"/>
+                                <include reference="VdL-LP-dm6"/>
+                                <include reference="DJe-eQ-sZG"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="P4W-JY-oxP"/>
                                 <include reference="plj-w7-vNI"/>
+                                <include reference="MwQ-C6-zlt"/>
+                                <include reference="szm-pV-c5Z"/>
+                                <include reference="MHl-6w-rNQ"/>
+                                <include reference="SxG-3t-fHk"/>
+                                <include reference="d79-FY-RX9"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="stop" destination="DJe-eQ-sZG" id="z1w-2E-JZh"/>
+                        <outlet property="text" destination="VdL-LP-dm6" id="07K-7w-Gkl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="304.5" y="351"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="microphone" width="100" height="100"/>
+        <image name="stop" width="50" height="50"/>
+    </resources>
 </document>
