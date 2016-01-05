@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var stop: UIButton!
     
+    @IBOutlet weak var recordButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,6 +23,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         stop.hidden = true;
+        recordButton.enabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +35,7 @@ class ViewController: UIViewController {
     @IBAction func recordAudio(sender: UIButton) {
         text.hidden = false //show text
         stop.hidden = false //show button
+        recordButton.enabled = false //disable button
         print("record")
     }
 
