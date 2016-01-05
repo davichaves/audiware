@@ -8,7 +8,7 @@
         <!--Record-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Record" id="BYZ-38-t0r" customClass="ViewController" customModule="Audiware" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Record" id="BYZ-38-t0r" customClass="RecordViewController" customModule="Audiware" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="1222.5" y="351"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sound View Controller-->
         <scene sceneID="YVK-Jn-oav">
             <objects>
-                <viewController id="v2g-ue-51u" sceneMemberID="viewController">
+                <viewController id="v2g-ue-51u" customClass="PlaySoundViewController" customModule="Audiware" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jfb-7y-H9I"/>
                         <viewControllerLayoutGuide type="bottom" id="1OA-Gi-UBB"/>

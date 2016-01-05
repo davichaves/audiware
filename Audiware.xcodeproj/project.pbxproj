@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B56122911C3470FE0019A802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122901C3470FE0019A802 /* AppDelegate.swift */; };
-		B56122931C3470FE0019A802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122921C3470FE0019A802 /* ViewController.swift */; };
+		B56122931C3470FE0019A802 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122921C3470FE0019A802 /* RecordViewController.swift */; };
 		B56122961C3470FE0019A802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56122941C3470FE0019A802 /* Main.storyboard */; };
 		B56122981C3470FE0019A802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56122971C3470FE0019A802 /* Assets.xcassets */; };
 		B561229B1C3470FE0019A802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56122991C3470FE0019A802 /* LaunchScreen.storyboard */; };
 		B56122A61C3470FF0019A802 /* AudiwareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122A51C3470FF0019A802 /* AudiwareTests.swift */; };
 		B56122B11C3470FF0019A802 /* AudiwareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122B01C3470FF0019A802 /* AudiwareUITests.swift */; };
 		B56122BF1C3479340019A802 /* readme.MD in Sources */ = {isa = PBXBuildFile; fileRef = B56122BE1C3479340019A802 /* readme.MD */; };
+		B5F1DFD51C3B5C3D00E7FF2F /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1DFD41C3B5C3D00E7FF2F /* PlaySoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		B561228D1C3470FE0019A802 /* Audiware.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audiware.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56122901C3470FE0019A802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B56122921C3470FE0019A802 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B56122921C3470FE0019A802 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		B56122951C3470FE0019A802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B56122971C3470FE0019A802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B561229A1C3470FE0019A802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		B56122B01C3470FF0019A802 /* AudiwareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiwareUITests.swift; sourceTree = "<group>"; };
 		B56122B21C3470FF0019A802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56122BE1C3479340019A802 /* readme.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.MD; sourceTree = "<group>"; };
+		B5F1DFD41C3B5C3D00E7FF2F /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				B56122901C3470FE0019A802 /* AppDelegate.swift */,
-				B56122921C3470FE0019A802 /* ViewController.swift */,
+				B56122921C3470FE0019A802 /* RecordViewController.swift */,
+				B5F1DFD41C3B5C3D00E7FF2F /* PlaySoundViewController.swift */,
 				B56122941C3470FE0019A802 /* Main.storyboard */,
 				B56122971C3470FE0019A802 /* Assets.xcassets */,
 				B56122991C3470FE0019A802 /* LaunchScreen.storyboard */,
@@ -259,8 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56122931C3470FE0019A802 /* ViewController.swift in Sources */,
+				B56122931C3470FE0019A802 /* RecordViewController.swift in Sources */,
 				B56122BF1C3479340019A802 /* readme.MD in Sources */,
+				B5F1DFD51C3B5C3D00E7FF2F /* PlaySoundViewController.swift in Sources */,
 				B56122911C3470FE0019A802 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +490,7 @@
 				B56122B71C3470FF0019A802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B56122B81C3470FF0019A802 /* Build configuration list for PBXNativeTarget "AudiwareTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				B56122BA1C3470FF0019A802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B56122BB1C3470FF0019A802 /* Build configuration list for PBXNativeTarget "AudiwareUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				B56122BD1C3470FF0019A802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
