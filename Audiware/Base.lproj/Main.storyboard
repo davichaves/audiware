@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5pO-g3-INf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5pO-g3-INf">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Record-->
@@ -34,9 +36,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJe-eQ-sZG">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="stop"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="175" y="542" width="50" height="50"/>
-                                </variation>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ELo-CT-SPL"/>
                                     <segue destination="v2g-ue-51u" kind="show" id="Sv3-VS-vz5"/>
@@ -60,13 +59,13 @@
                                 <exclude reference="DJe-eQ-sZG"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="d79-FY-RX9"/>
+                                <exclude reference="MHl-6w-rNQ"/>
+                                <exclude reference="SxG-3t-fHk"/>
                                 <exclude reference="P4W-JY-oxP"/>
                                 <exclude reference="plj-w7-vNI"/>
                                 <exclude reference="MwQ-C6-zlt"/>
                                 <exclude reference="szm-pV-c5Z"/>
-                                <exclude reference="MHl-6w-rNQ"/>
-                                <exclude reference="SxG-3t-fHk"/>
-                                <exclude reference="d79-FY-RX9"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -76,13 +75,13 @@
                                 <include reference="DJe-eQ-sZG"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="d79-FY-RX9"/>
+                                <include reference="MHl-6w-rNQ"/>
+                                <include reference="SxG-3t-fHk"/>
                                 <include reference="P4W-JY-oxP"/>
                                 <include reference="plj-w7-vNI"/>
                                 <include reference="MwQ-C6-zlt"/>
                                 <include reference="szm-pV-c5Z"/>
-                                <include reference="MHl-6w-rNQ"/>
-                                <include reference="SxG-3t-fHk"/>
-                                <include reference="d79-FY-RX9"/>
                             </mask>
                         </variation>
                     </view>
@@ -106,8 +105,43 @@
                         <viewControllerLayoutGuide type="bottom" id="1OA-Gi-UBB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aVO-8J-hjz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSm-Nd-D2l">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="slow"/>
+                                <connections>
+                                    <action selector="playSlow:" destination="v2g-ue-51u" eventType="touchUpInside" id="xQg-k9-UhJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="vSm-Nd-D2l" secondAttribute="trailing" constant="237" id="M8n-o1-aAd"/>
+                            <constraint firstItem="vSm-Nd-D2l" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="35" id="YIU-XX-0OM"/>
+                            <constraint firstItem="vSm-Nd-D2l" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leadingMargin" constant="23" id="stl-1y-CA7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="vSm-Nd-D2l"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="M8n-o1-aAd"/>
+                                <exclude reference="YIU-XX-0OM"/>
+                                <exclude reference="stl-1y-CA7"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="vSm-Nd-D2l"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="M8n-o1-aAd"/>
+                                <include reference="YIU-XX-0OM"/>
+                                <include reference="stl-1y-CA7"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7u-TY-q1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -135,6 +169,7 @@
     </scenes>
     <resources>
         <image name="microphone" width="100" height="100"/>
+        <image name="slow" width="100" height="100"/>
         <image name="stop" width="50" height="50"/>
     </resources>
 </document>

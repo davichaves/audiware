@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordViewController.swift
 //  Audiware
 //
 //  Created by Davi Rodrigues Chaves on 12/30/15.
