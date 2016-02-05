@@ -9,21 +9,22 @@
 import UIKit
 import AVFoundation
 
+
 class PlaySoundViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
-//        super.viewDidLoad()
-//        
-//        var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("button-09", ofType: "wav")!)
-//        print(alertSound)
-//        
-//        var error:NSError?
-//        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
-//        audioPlayer.prepareToPlay()
-//        audioPlayer.play()
-        
+        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
+            var fileUrl = NSURL.fileURLWithPath(filePath);
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOfURL: fileUrl);
+            } catch {
+                print("problem in AVAudioPlayer");
+            };
+        } else {
+            print("the filepath is empty");
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +33,7 @@ class PlaySoundViewController: UIViewController {
     }
     
     @IBAction func playSlow(sender: UIButton) {
-        //play slow
+        
     }
 
     /*
