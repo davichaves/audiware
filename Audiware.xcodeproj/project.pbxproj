@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B55E08571C6B4E91004873EC /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E08561C6B4E91004873EC /* RecordedAudio.swift */; };
 		B56122911C3470FE0019A802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122901C3470FE0019A802 /* AppDelegate.swift */; };
 		B56122931C3470FE0019A802 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122921C3470FE0019A802 /* RecordViewController.swift */; };
 		B56122961C3470FE0019A802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56122941C3470FE0019A802 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B55E08561C6B4E91004873EC /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		B561228D1C3470FE0019A802 /* Audiware.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audiware.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56122901C3470FE0019A802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B56122921C3470FE0019A802 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				B56122901C3470FE0019A802 /* AppDelegate.swift */,
 				B56122921C3470FE0019A802 /* RecordViewController.swift */,
+				B55E08561C6B4E91004873EC /* RecordedAudio.swift */,
 				B5F1DFD41C3B5C3D00E7FF2F /* PlaySoundViewController.swift */,
 				B56122941C3470FE0019A802 /* Main.storyboard */,
 				B5D93DFA1C64B30500F67C9A /* movie_quote.mp3 */,
@@ -270,6 +273,7 @@
 				B56122BF1C3479340019A802 /* readme.MD in Sources */,
 				B5F1DFD51C3B5C3D00E7FF2F /* PlaySoundViewController.swift in Sources */,
 				B56122911C3470FE0019A802 /* AppDelegate.swift in Sources */,
+				B55E08571C6B4E91004873EC /* RecordedAudio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
