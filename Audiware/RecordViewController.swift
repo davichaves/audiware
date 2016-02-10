@@ -33,7 +33,6 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
     @IBAction func recordAudio(sender: UIButton) {
         text.hidden = false //show text
         stop.hidden = false //show button
@@ -70,6 +69,14 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
             print("Recording was not successful");
             recordButton.enabled = true;
             stop.hidden = true;
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "stopRecording") {
+            let playSoundsVC:PlaySoundViewController = segue.destinationViewController as! PlaySoundViewController
+            let data = sender as! RecordedAudio
+            playSoundsVC.receivedAudio = data;
         }
     }
 

@@ -12,7 +12,8 @@ import AVFoundation
 
 class PlaySoundViewController: UIViewController {
     
-    var audioPlayer = AVAudioPlayer()
+    var audioPlayer:AVAudioPlayer!
+    var receivedAudio:RecordedAudio!
     
     override func viewDidLoad() {
         if let filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
