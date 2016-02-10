@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -36,6 +35,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJe-eQ-sZG">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="stop"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="175" y="467" width="50" height="50"/>
+                                </variation>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ELo-CT-SPL"/>
                                     <segue destination="v2g-ue-51u" kind="show" id="Sv3-VS-vz5"/>
@@ -115,31 +117,66 @@
                                     <action selector="playSlow:" destination="v2g-ue-51u" eventType="touchUpInside" id="xQg-k9-UhJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4r-uj-b6X">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="fast"/>
+                                <connections>
+                                    <action selector="playFast:" destination="v2g-ue-51u" eventType="touchUpInside" id="aOe-Yr-q00"/>
+                                    <action selector="playSlow:" destination="v2g-ue-51u" eventType="touchUpInside" id="s8p-zk-wl6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxL-c7-hE3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="stop"/>
+                                <connections>
+                                    <action selector="stopPlaying:" destination="v2g-ue-51u" eventType="touchUpInside" id="cRe-S9-Oaw"/>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4pg-cS-tnY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="vSm-Nd-D2l" secondAttribute="trailing" constant="237" id="M8n-o1-aAd"/>
+                            <constraint firstItem="lxL-c7-hE3" firstAttribute="centerX" secondItem="aVO-8J-hjz" secondAttribute="centerX" id="Dqu-5h-U8A"/>
+                            <constraint firstItem="1OA-Gi-UBB" firstAttribute="top" secondItem="lxL-c7-hE3" secondAttribute="bottom" constant="60" id="F59-ts-kQQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A4r-uj-b6X" secondAttribute="trailing" constant="25" id="JIA-q1-LiJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vSm-Nd-D2l" secondAttribute="trailing" constant="235" id="M8n-o1-aAd"/>
                             <constraint firstItem="vSm-Nd-D2l" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="35" id="YIU-XX-0OM"/>
-                            <constraint firstItem="vSm-Nd-D2l" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leadingMargin" constant="23" id="stl-1y-CA7"/>
+                            <constraint firstItem="A4r-uj-b6X" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leadingMargin" constant="235" id="dkI-OQ-jfq"/>
+                            <constraint firstItem="A4r-uj-b6X" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="35" id="gHC-N3-XOX"/>
+                            <constraint firstItem="vSm-Nd-D2l" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leadingMargin" constant="25" id="stl-1y-CA7"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="vSm-Nd-D2l"/>
+                                <exclude reference="A4r-uj-b6X"/>
+                                <exclude reference="lxL-c7-hE3"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="M8n-o1-aAd"/>
                                 <exclude reference="YIU-XX-0OM"/>
                                 <exclude reference="stl-1y-CA7"/>
+                                <exclude reference="JIA-q1-LiJ"/>
+                                <exclude reference="dkI-OQ-jfq"/>
+                                <exclude reference="gHC-N3-XOX"/>
+                                <exclude reference="Dqu-5h-U8A"/>
+                                <exclude reference="F59-ts-kQQ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="vSm-Nd-D2l"/>
+                                <include reference="A4r-uj-b6X"/>
+                                <include reference="lxL-c7-hE3"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="M8n-o1-aAd"/>
                                 <include reference="YIU-XX-0OM"/>
                                 <include reference="stl-1y-CA7"/>
+                                <include reference="JIA-q1-LiJ"/>
+                                <include reference="dkI-OQ-jfq"/>
+                                <include reference="gHC-N3-XOX"/>
+                                <include reference="Dqu-5h-U8A"/>
+                                <include reference="F59-ts-kQQ"/>
                             </mask>
                         </variation>
                     </view>
@@ -168,6 +205,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fast" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slow" width="100" height="100"/>
         <image name="stop" width="50" height="50"/>

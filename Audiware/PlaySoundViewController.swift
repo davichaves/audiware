@@ -15,8 +15,8 @@ class PlaySoundViewController: UIViewController {
     var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
-        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
-            var fileUrl = NSURL.fileURLWithPath(filePath);
+        if let filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
+            let fileUrl = NSURL.fileURLWithPath(filePath);
             do {
                 audioPlayer = try AVAudioPlayer(contentsOfURL: fileUrl);
             } catch {
@@ -36,9 +36,22 @@ class PlaySoundViewController: UIViewController {
         audioPlayer.stop();
         audioPlayer.enableRate = true;
         audioPlayer.rate = 0.5;
+        audioPlayer.currentTime = 0.0;
         audioPlayer.play();
     }
 
+    @IBAction func playFast(sender: UIButton) {
+        audioPlayer.stop();
+        audioPlayer.enableRate = true;
+        audioPlayer.rate = 2;
+        audioPlayer.currentTime = 0.0;
+        audioPlayer.play();
+    }
+    
+    @IBAction func stopPlaying(sender: UIButton) {
+        audioPlayer.stop();
+    }
+    
     /*
     // MARK: - Navigation
 
