@@ -56,6 +56,10 @@ class PlaySoundViewController: UIViewController {
         playAudioWithVariablePitch(1000);
     }
     
+    @IBAction func playVader(sender: UIButton) {
+        playAudioWithVariablePitch(-1000);
+    }
+    
     func playAudioWithVariablePitch(pitch: Float) {
         audioPlayer.stop();
         audioEngine.stop();
