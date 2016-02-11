@@ -12,6 +12,7 @@ import AVFoundation
 
 class PlaySoundViewController: UIViewController {
     
+    var audioSession:AVAudioSession!
     var audioPlayer:AVAudioPlayer!
     var receivedAudio:RecordedAudio!
     var audioEngine:AVAudioEngine!
@@ -26,7 +27,19 @@ class PlaySoundViewController: UIViewController {
         audioPlayer.enableRate = true;
         
         audioEngine = AVAudioEngine();
-        audioFile = try! AVAudioFile(forReading: receivedAudio.filePathUrl)
+        audioFile = try! AVAudioFile(forReading: receivedAudio.filePathUrl);
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
+        } catch _ {
+        }
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch _ {
+        }
+        do {
+            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.Speaker)
+        } catch _ {
+        }
     }
 
     override func didReceiveMemoryWarning() {
