@@ -16,7 +16,6 @@
 		B56122A61C3470FF0019A802 /* AudiwareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122A51C3470FF0019A802 /* AudiwareTests.swift */; };
 		B56122B11C3470FF0019A802 /* AudiwareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122B01C3470FF0019A802 /* AudiwareUITests.swift */; };
 		B56122BF1C3479340019A802 /* readme.MD in Sources */ = {isa = PBXBuildFile; fileRef = B56122BE1C3479340019A802 /* readme.MD */; };
-		B5D93DFB1C64B30500F67C9A /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5D93DFA1C64B30500F67C9A /* movie_quote.mp3 */; };
 		B5F1DFD51C3B5C3D00E7FF2F /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1DFD41C3B5C3D00E7FF2F /* PlaySoundViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		B56122B01C3470FF0019A802 /* AudiwareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiwareUITests.swift; sourceTree = "<group>"; };
 		B56122B21C3470FF0019A802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56122BE1C3479340019A802 /* readme.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.MD; sourceTree = "<group>"; };
-		B5D93DFA1C64B30500F67C9A /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
 		B5F1DFD41C3B5C3D00E7FF2F /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +109,6 @@
 				B55E08561C6B4E91004873EC /* RecordedAudio.swift */,
 				B5F1DFD41C3B5C3D00E7FF2F /* PlaySoundViewController.swift */,
 				B56122941C3470FE0019A802 /* Main.storyboard */,
-				B5D93DFA1C64B30500F67C9A /* movie_quote.mp3 */,
 				B56122971C3470FE0019A802 /* Assets.xcassets */,
 				B56122991C3470FE0019A802 /* LaunchScreen.storyboard */,
 				B561229C1C3470FE0019A802 /* Info.plist */,
@@ -243,7 +240,6 @@
 			files = (
 				B561229B1C3470FE0019A802 /* LaunchScreen.storyboard in Resources */,
 				B56122981C3470FE0019A802 /* Assets.xcassets in Resources */,
-				B5D93DFB1C64B30500F67C9A /* movie_quote.mp3 in Resources */,
 				B56122961C3470FE0019A802 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
