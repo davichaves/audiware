@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import GoogleMobileAds
 
 class RecordViewController: UIViewController, AVAudioRecorderDelegate {
 
@@ -18,9 +19,17 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     var audioRecorder:AVAudioRecorder!
     var recordedAudio:RecordedAudio!
     
+    var interstitial: GADInterstitial! //this is for the ads
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.interstitial = GADInterstitial(adUnitID: "ca-app-pub-8649930298352151/4522760426")
+        
+        let request = GADRequest()
+        // Requests test ads on test devices.
+        request.testDevices = ["2077ef9a63d2b398840261c8221a0c9b"]
+        self.interstitial.loadRequest(request)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -71,6 +80,9 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if self.interstitial.isReady {
+            self.interstitial.presentFromRootViewController(self)
+        }
         if(segue.identifier == "stopRecording") {
             let playSoundsVC:PlaySoundViewController = segue.destinationViewController as! PlaySoundViewController
             let data = sender as! RecordedAudio
