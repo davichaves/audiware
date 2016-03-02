@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -35,9 +36,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJe-eQ-sZG">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="stop"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="175" y="467" width="50" height="50"/>
-                                </variation>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ELo-CT-SPL"/>
                                 </connections>
@@ -146,6 +144,13 @@
                                     <action selector="playVader:" destination="v2g-ue-51u" eventType="touchUpInside" id="xQ8-Nt-of9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nef-m9-Cdc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="shareButton:" destination="v2g-ue-51u" eventType="touchUpInside" id="RmH-OZ-mhg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -157,9 +162,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="vSm-Nd-D2l" secondAttribute="trailing" constant="235" id="M8n-o1-aAd"/>
                             <constraint firstItem="KA6-4q-mu0" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="255" id="NFG-CK-7wf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KA6-4q-mu0" secondAttribute="trailing" constant="25" id="Nyo-1u-tbf"/>
+                            <constraint firstItem="1OA-Gi-UBB" firstAttribute="top" secondItem="Nef-m9-Cdc" secondAttribute="bottom" constant="20" id="St0-tV-6a7"/>
                             <constraint firstItem="HUL-ZX-I31" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="255" id="TwS-fA-dM6"/>
                             <constraint firstItem="vSm-Nd-D2l" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="35" id="YIU-XX-0OM"/>
                             <constraint firstItem="A4r-uj-b6X" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leadingMargin" constant="235" id="dkI-OQ-jfq"/>
+                            <constraint firstItem="Nef-m9-Cdc" firstAttribute="centerX" secondItem="aVO-8J-hjz" secondAttribute="centerX" id="eQR-Tg-ClL"/>
                             <constraint firstItem="A4r-uj-b6X" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="35" id="gHC-N3-XOX"/>
                             <constraint firstItem="1OA-Gi-UBB" firstAttribute="top" secondItem="HUL-ZX-I31" secondAttribute="bottom" constant="180" id="hc5-tL-zhx"/>
                             <constraint firstItem="vSm-Nd-D2l" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leadingMargin" constant="25" id="stl-1y-CA7"/>
@@ -171,6 +178,7 @@
                                 <exclude reference="lxL-c7-hE3"/>
                                 <exclude reference="HUL-ZX-I31"/>
                                 <exclude reference="KA6-4q-mu0"/>
+                                <exclude reference="Nef-m9-Cdc"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="M8n-o1-aAd"/>
@@ -184,8 +192,10 @@
                                 <exclude reference="NFG-CK-7wf"/>
                                 <exclude reference="Nyo-1u-tbf"/>
                                 <exclude reference="Dqu-5h-U8A"/>
+                                <exclude reference="eQR-Tg-ClL"/>
                                 <exclude reference="8ca-py-zBN"/>
                                 <exclude reference="F59-ts-kQQ"/>
+                                <exclude reference="St0-tV-6a7"/>
                                 <exclude reference="hc5-tL-zhx"/>
                             </mask>
                         </variation>
@@ -196,6 +206,7 @@
                                 <include reference="lxL-c7-hE3"/>
                                 <include reference="HUL-ZX-I31"/>
                                 <include reference="KA6-4q-mu0"/>
+                                <include reference="Nef-m9-Cdc"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="M8n-o1-aAd"/>
@@ -209,8 +220,10 @@
                                 <include reference="NFG-CK-7wf"/>
                                 <include reference="Nyo-1u-tbf"/>
                                 <include reference="Dqu-5h-U8A"/>
+                                <include reference="eQR-Tg-ClL"/>
                                 <include reference="8ca-py-zBN"/>
                                 <include reference="F59-ts-kQQ"/>
+                                <include reference="St0-tV-6a7"/>
                                 <include reference="hc5-tL-zhx"/>
                             </mask>
                         </variation>

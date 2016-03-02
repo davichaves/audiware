@@ -63,6 +63,16 @@ class PlaySoundViewController: UIViewController {
         playAudioWithVariablePitch(-1000);
     }
     
+    @IBAction func shareButton(sender: UIButton) {
+        let textToShare = "Swift is awesome!  Check out this website about it!"
+        
+        if let myWebsite = NSURL(string: "http://www.codingexplorer.com/") {
+            let objectsToShare = [textToShare, myWebsite]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            
+            self.presentViewController(activityVC, animated: true, completion: nil)
+        }
+    }
     func playAudioWithVariablePitch(pitch: Float) {
         audioPlayer.stop();
         audioEngine.stop();
