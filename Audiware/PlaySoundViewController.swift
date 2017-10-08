@@ -20,14 +20,14 @@ class PlaySoundViewController: UIViewController {
     
     override func viewDidLoad() {
         do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl);
+            audioPlayer = try AVAudioPlayer(contentsOf: receivedAudio.filePathUrl as URL);
         } catch {
             print("problem in AVAudioPlayer");
         }
         audioPlayer.enableRate = true;
         
         audioEngine = AVAudioEngine();
-        audioFile = try! AVAudioFile(forReading: receivedAudio.filePathUrl);
+        audioFile = try! AVAudioFile(forReading: receivedAudio.filePathUrl as URL);
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
         } catch _ {
@@ -37,7 +37,7 @@ class PlaySoundViewController: UIViewController {
         } catch _ {
         }
         do {
-            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.Speaker)
+            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
         } catch _ {
         }
     }
@@ -47,54 +47,54 @@ class PlaySoundViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func playSlow(sender: UIButton) {
+    @IBAction func playSlow(_ sender: UIButton) {
         playAudio(0.5);
     }
 
-    @IBAction func playFast(sender: UIButton) {
+    @IBAction func playFast(_ sender: UIButton) {
         playAudio(1.5);
     }
 
-    @IBAction func playChipmunk(sender: UIButton) {
+    @IBAction func playChipmunk(_ sender: UIButton) {
         playAudioWithVariablePitch(1000);
     }
     
-    @IBAction func playVader(sender: UIButton) {
+    @IBAction func playVader(_ sender: UIButton) {
         playAudioWithVariablePitch(-1000);
     }
     
-    @IBAction func shareButton(sender: UIButton) {
+    @IBAction func shareButton(_ sender: UIButton) {
         let textToShare = "Swift is awesome!  Check out this website about it!"
         
-        if let myWebsite = NSURL(string: "http://www.codingexplorer.com/") {
-            let objectsToShare = [textToShare, myWebsite]
+        if let myWebsite = URL(string: "http://www.codingexplorer.com/") {
+            let objectsToShare = [textToShare, myWebsite] as [Any]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             
-            self.presentViewController(activityVC, animated: true, completion: nil)
+            self.present(activityVC, animated: true, completion: nil)
         }
     }
-    func playAudioWithVariablePitch(pitch: Float) {
+    func playAudioWithVariablePitch(_ pitch: Float) {
         audioPlayer.stop();
         audioEngine.stop();
         audioEngine.reset();
         
         let audioPlayerNode = AVAudioPlayerNode();
-        audioEngine.attachNode(audioPlayerNode);
+        audioEngine.attach(audioPlayerNode);
         
         let changePitchEffect = AVAudioUnitTimePitch();
         changePitchEffect.pitch = pitch;
-        audioEngine.attachNode(changePitchEffect)
+        audioEngine.attach(changePitchEffect)
         
         audioEngine.connect(audioPlayerNode, to: changePitchEffect, format: nil)
         audioEngine.connect(changePitchEffect, to: audioEngine.outputNode, format: nil)
         
-        audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: nil);
+        audioPlayerNode.scheduleFile(audioFile, at: nil, completionHandler: nil);
         try! audioEngine.start();
         
         audioPlayerNode.play();
     }
     
-    func playAudio(myRate: Float) {
+    func playAudio(_ myRate: Float) {
         audioEngine.stop();
         audioEngine.reset();
         audioPlayer.stop();
@@ -103,7 +103,7 @@ class PlaySoundViewController: UIViewController {
         audioPlayer.play();
     }
     
-    @IBAction func stopPlaying(sender: UIButton) {
+    @IBAction func stopPlaying(_ sender: UIButton) {
         audioPlayer.stop();
     }
     

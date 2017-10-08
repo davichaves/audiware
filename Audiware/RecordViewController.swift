@@ -32,9 +32,9 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         self.interstitial.loadRequest(request)
     }
     
-    override func viewWillAppear(animated: Bool) {
-        stop.hidden = true;
-        recordButton.enabled = true
+    override func viewWillAppear(_ animated: Bool) {
+        stop.isHidden = true;
+        recordButton.isEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,12 +42,12 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func recordAudio(sender: UIButton) {
-        text.hidden = false //show text
-        stop.hidden = false //show button
-        recordButton.enabled = false //disable button
+    @IBAction func recordAudio(_ sender: UIButton) {
+        text.isHidden = false //show text
+        stop.isHidden = false //show button
+        recordButton.isEnabled = false //disable button
         print("record")
-        let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         
         // let currentDateTime = NSDate()
         // let formatter = NSDateFormatter()
@@ -55,43 +55,43 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         // let recordingName = formatter.stringFromDate(currentDateTime)+".wav"
         let recordingName = "my_audio.wav"
         let pathArray = [dirPath, recordingName]
-        let filePath = NSURL.fileURLWithPathComponents(pathArray)
+        let filePath = URL.fileURL(withPathComponents: pathArray)
         print(filePath)
         
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
         
-        try! audioRecorder = AVAudioRecorder(URL: filePath!, settings: [:])
+        try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
         audioRecorder.delegate = self
-        audioRecorder.meteringEnabled = true
+        audioRecorder.isMeteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
     }
     
-    func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if(flag) {
             recordedAudio = RecordedAudio(_filePathUrl: recorder.url, _title: recorder.url.lastPathComponent!);
-            self.performSegueWithIdentifier("stopRecording", sender: recordedAudio);
+            self.performSegue(withIdentifier: "stopRecording", sender: recordedAudio);
         } else {
             print("Recording was not successful");
-            recordButton.enabled = true;
-            stop.hidden = true;
+            recordButton.isEnabled = true;
+            stop.isHidden = true;
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if self.interstitial.isReady {
             self.interstitial.presentFromRootViewController(self)
         }
         if(segue.identifier == "stopRecording") {
-            let playSoundsVC:PlaySoundViewController = segue.destinationViewController as! PlaySoundViewController
+            let playSoundsVC:PlaySoundViewController = segue.destination as! PlaySoundViewController
             let data = sender as! RecordedAudio
             playSoundsVC.receivedAudio = data;
         }
     }
 
-    @IBAction func stopRecording(sender: UIButton) {
-        text.hidden = true
+    @IBAction func stopRecording(_ sender: UIButton) {
+        text.isHidden = true
         print("stop")
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		424B0D805CFF7EE112560093 /* Pods_Audiware.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921EC2DD1F6598091F647416 /* Pods_Audiware.framework */; };
 		B55E08571C6B4E91004873EC /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E08561C6B4E91004873EC /* RecordedAudio.swift */; };
 		B56122911C3470FE0019A802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122901C3470FE0019A802 /* AppDelegate.swift */; };
 		B56122931C3470FE0019A802 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56122921C3470FE0019A802 /* RecordViewController.swift */; };
@@ -37,7 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		785D105521B609738004BF8D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		39A7F112EB7ACC1633BA1735 /* Pods-Audiware.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiware.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audiware/Pods-Audiware.debug.xcconfig"; sourceTree = "<group>"; };
+		921EC2DD1F6598091F647416 /* Pods_Audiware.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audiware.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55E08561C6B4E91004873EC /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		B561228D1C3470FE0019A802 /* Audiware.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audiware.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56122901C3470FE0019A802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +56,7 @@
 		B56122B21C3470FF0019A802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56122BE1C3479340019A802 /* readme.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.MD; sourceTree = "<group>"; };
 		B5F1DFD41C3B5C3D00E7FF2F /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
-		E51B8258BA7209EAFD36A10B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		FF9A537F74391DC6801C0431 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E497FEB71C8E4E175CFD55C8 /* Pods-Audiware.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiware.release.xcconfig"; path = "Pods/Target Support Files/Pods-Audiware/Pods-Audiware.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				424B0D805CFF7EE112560093 /* Pods_Audiware.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,10 +85,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		509C6AE61E3404F7AE60C3C5 /* Frameworks */ = {
+		462309E17AF445EA43B151CB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FF9A537F74391DC6801C0431 /* libPods.a */,
+				39A7F112EB7ACC1633BA1735 /* Pods-Audiware.debug.xcconfig */,
+				E497FEB71C8E4E175CFD55C8 /* Pods-Audiware.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81BF9DF3C749C266522C4AF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				921EC2DD1F6598091F647416 /* Pods_Audiware.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,8 +110,8 @@
 				B56122A41C3470FF0019A802 /* AudiwareTests */,
 				B56122AF1C3470FF0019A802 /* AudiwareUITests */,
 				B561228E1C3470FE0019A802 /* Products */,
-				CFB753FD34F2E68B29D71D7B /* Pods */,
-				509C6AE61E3404F7AE60C3C5 /* Frameworks */,
+				462309E17AF445EA43B151CB /* Pods */,
+				81BF9DF3C749C266522C4AF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,15 +158,6 @@
 			path = AudiwareUITests;
 			sourceTree = "<group>";
 		};
-		CFB753FD34F2E68B29D71D7B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				785D105521B609738004BF8D /* Pods.debug.xcconfig */,
-				E51B8258BA7209EAFD36A10B /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,12 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B56122B51C3470FF0019A802 /* Build configuration list for PBXNativeTarget "Audiware" */;
 			buildPhases = (
-				00A4E14E079B4115191F30BB /* Check Pods Manifest.lock */,
+				1D6236DE4F24FD2154EBC176 /* [CP] Check Pods Manifest.lock */,
 				B56122891C3470FE0019A802 /* Sources */,
 				B561228A1C3470FE0019A802 /* Frameworks */,
 				B561228B1C3470FE0019A802 /* Resources */,
-				522436FC46CBCAE347F3E25E /* Embed Pods Frameworks */,
-				B168A9B93BE26935BEF1EBBD /* Copy Pods Resources */,
+				32F29068300CBBCF120A31C6 /* [CP] Embed Pods Frameworks */,
+				C5D8308ECD098D6FADA39176 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,13 +229,17 @@
 				TargetAttributes = {
 					B561228C1C3470FE0019A802 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = XK2N6ZPPDL;
+						LastSwiftMigration = 0820;
 					};
 					B56122A01C3470FF0019A802 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
 						TestTargetID = B561228C1C3470FE0019A802;
 					};
 					B56122AB1C3470FF0019A802 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
 						TestTargetID = B561228C1C3470FE0019A802;
 					};
 				};
@@ -286,49 +292,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00A4E14E079B4115191F30BB /* Check Pods Manifest.lock */ = {
+		1D6236DE4F24FD2154EBC176 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		522436FC46CBCAE347F3E25E /* Embed Pods Frameworks */ = {
+		32F29068300CBBCF120A31C6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audiware/Pods-Audiware-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B168A9B93BE26935BEF1EBBD /* Copy Pods Resources */ = {
+		C5D8308ECD098D6FADA39176 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audiware/Pods-Audiware-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -480,25 +486,29 @@
 		};
 		B56122B61C3470FF0019A802 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 785D105521B609738004BF8D /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 39A7F112EB7ACC1633BA1735 /* Pods-Audiware.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XK2N6ZPPDL;
 				INFOPLIST_FILE = Audiware/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davichaves.Audiware;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		B56122B71C3470FF0019A802 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E51B8258BA7209EAFD36A10B /* Pods.release.xcconfig */;
+			baseConfigurationReference = E497FEB71C8E4E175CFD55C8 /* Pods-Audiware.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XK2N6ZPPDL;
 				INFOPLIST_FILE = Audiware/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davichaves.Audiware;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -510,6 +520,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davichaves.AudiwareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audiware.app/Audiware";
 			};
 			name = Debug;
@@ -522,6 +533,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davichaves.AudiwareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audiware.app/Audiware";
 			};
 			name = Release;
@@ -533,6 +545,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davichaves.AudiwareUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Audiware;
 				USES_XCTRUNNER = YES;
 			};
@@ -545,6 +558,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davichaves.AudiwareUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Audiware;
 				USES_XCTRUNNER = YES;
 			};
