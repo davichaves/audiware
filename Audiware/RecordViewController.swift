@@ -29,7 +29,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         let request = GADRequest()
         // Requests test ads on test devices.
         request.testDevices = ["2077ef9a63d2b398840261c8221a0c9b"]
-        self.interstitial.loadRequest(request)
+        self.interstitial.load(request)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,14 +54,14 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         // formatter.dateFormat = "ddMMyyyy-HHmmss"
         // let recordingName = formatter.stringFromDate(currentDateTime)+".wav"
         let recordingName = "my_audio.wav"
-        let pathArray = [dirPath, recordingName]
-        let filePath = URL.fileURL(withPathComponents: pathArray)
+        let pathArray = dirPath + recordingName
+        let filePath = URL(fileURLWithPath: pathArray)
         print(filePath)
         
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
         
-        try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+        try! audioRecorder = AVAudioRecorder(url: filePath, settings: [:])
         audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true
         audioRecorder.prepareToRecord()
@@ -70,7 +70,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if(flag) {
-            recordedAudio = RecordedAudio(_filePathUrl: recorder.url, _title: recorder.url.lastPathComponent!);
+            recordedAudio = RecordedAudio(_filePathUrl: recorder.url, _title: recorder.url.lastPathComponent);
             self.performSegue(withIdentifier: "stopRecording", sender: recordedAudio);
         } else {
             print("Recording was not successful");
@@ -81,7 +81,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if self.interstitial.isReady {
-            self.interstitial.presentFromRootViewController(self)
+            self.interstitial.present(fromRootViewController: self)
         }
         if(segue.identifier == "stopRecording") {
             let playSoundsVC:PlaySoundViewController = segue.destination as! PlaySoundViewController

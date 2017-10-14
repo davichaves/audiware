@@ -17,7 +17,6 @@
 		16156F019AF60054CAC552140D0EDDF3 /* Pods-Audiware.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Audiware.release.xcconfig"; sourceTree = "<group>"; };
 		3A5F1F24CEFA34955B65A6A5E34AA167 /* Pods-Audiware-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Audiware-resources.sh"; sourceTree = "<group>"; };
 		3F91955B89AF5773DBA5273230D73D26 /* Pods-Audiware-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Audiware-frameworks.sh"; sourceTree = "<group>"; };
-		5498EEBC580021C838DFC97008F4E819 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.7.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		55F4B76DF67EDFA5338F863FA276F367 /* Pods-Audiware.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Audiware.modulemap"; sourceTree = "<group>"; };
 		639BB0E5D1BA0B3CB9B3296C4B36CE48 /* Pods-Audiware-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Audiware-acknowledgements.plist"; sourceTree = "<group>"; };
 		68EE58520054E9C7E85CF7CC93A3ECCB /* Pods-Audiware-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Audiware-umbrella.h"; sourceTree = "<group>"; };
@@ -27,6 +26,7 @@
 		BB37F450CAD539532F0722E3C9E0EDB1 /* Pods-Audiware-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Audiware-dummy.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CCCE57E6E861E079876C1FF7FFCABF52 /* Pods-Audiware.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Audiware.debug.xcconfig"; sourceTree = "<group>"; };
+		F87BBE855D70C2F87C02A1CCA30E262D /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +102,10 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8F1DA0DA8C21EFD7988505F2BD99ABBF /* Frameworks */ = {
+		953FD61A3CECC96530CB5CA297A086C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5498EEBC580021C838DFC97008F4E819 /* GoogleMobileAds.framework */,
+				F87BBE855D70C2F87C02A1CCA30E262D /* GoogleMobileAds.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,7 +121,7 @@
 		E91D6015731707498AAA5817D350B87B /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				8F1DA0DA8C21EFD7988505F2BD99ABBF /* Frameworks */,
+				953FD61A3CECC96530CB5CA297A086C1 /* Frameworks */,
 			);
 			name = "Google-Mobile-Ads-SDK";
 			path = "Google-Mobile-Ads-SDK";
