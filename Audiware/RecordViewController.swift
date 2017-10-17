@@ -47,21 +47,17 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         stop.isHidden = false //show button
         recordButton.isEnabled = false //disable button
         print("record")
-        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         
-        // let currentDateTime = NSDate()
-        // let formatter = NSDateFormatter()
-        // formatter.dateFormat = "ddMMyyyy-HHmmss"
-        // let recordingName = formatter.stringFromDate(currentDateTime)+".wav"
-        let recordingName = "my_audio.wav"
-        let pathArray = dirPath + recordingName
-        let filePath = URL(fileURLWithPath: pathArray)
+        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
+        let recordingName = "recording.wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = NSURL.fileURL(withPathComponents: pathArray)
         print(filePath)
         
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
+        try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
         
-        try! audioRecorder = AVAudioRecorder(url: filePath, settings: [:])
         audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true
         audioRecorder.prepareToRecord()

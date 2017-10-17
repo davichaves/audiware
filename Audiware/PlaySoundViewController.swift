@@ -73,6 +73,7 @@ class PlaySoundViewController: UIViewController {
             self.present(activityVC, animated: true, completion: nil)
         }
     }
+    
     func playAudioWithVariablePitch(_ pitch: Float) {
         audioPlayer.stop();
         audioEngine.stop();
