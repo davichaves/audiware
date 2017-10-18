@@ -103,50 +103,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSm-Nd-D2l">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSm-Nd-D2l">
+                                <rect key="frame" x="52" y="136" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1GB-qz-qok"/>
+                                    <constraint firstAttribute="width" secondItem="vSm-Nd-D2l" secondAttribute="height" multiplier="1:1" id="Y5L-cC-x7a"/>
+                                    <constraint firstAttribute="width" constant="100" id="nGT-JU-qB7"/>
+                                </constraints>
                                 <state key="normal" image="slow"/>
                                 <connections>
                                     <action selector="playSlow:" destination="v2g-ue-51u" eventType="touchUpInside" id="8Mn-9l-Z9R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4r-uj-b6X">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4r-uj-b6X">
+                                <rect key="frame" x="228" y="136" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="A4r-uj-b6X" secondAttribute="height" multiplier="1:1" id="6iU-v0-6EH"/>
+                                    <constraint firstAttribute="width" constant="100" id="YAX-p2-KgV"/>
+                                    <constraint firstAttribute="height" constant="100" id="tbQ-VK-MPL"/>
+                                </constraints>
                                 <state key="normal" image="fast"/>
                                 <connections>
                                     <action selector="playFast:" destination="v2g-ue-51u" eventType="touchUpInside" id="aOe-Yr-q00"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxL-c7-hE3">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxL-c7-hE3">
+                                <rect key="frame" x="162" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lxL-c7-hE3" secondAttribute="height" multiplier="1:1" id="Pvb-b2-dbz"/>
+                                    <constraint firstAttribute="width" constant="50" id="oXn-CZ-w0V"/>
+                                    <constraint firstAttribute="height" constant="50" id="tX6-Zd-QcF"/>
+                                </constraints>
                                 <state key="normal" image="stop"/>
                                 <connections>
                                     <action selector="stopPlaying:" destination="v2g-ue-51u" eventType="touchUpInside" id="cRe-S9-Oaw"/>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4pg-cS-tnY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUL-ZX-I31">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUL-ZX-I31">
+                                <rect key="frame" x="52" y="283" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HUL-ZX-I31" secondAttribute="height" multiplier="1:1" id="CfI-Pa-MeF"/>
+                                    <constraint firstAttribute="width" constant="100" id="FLL-ME-vNH"/>
+                                    <constraint firstAttribute="height" constant="100" id="KRm-QH-h6B"/>
+                                </constraints>
                                 <state key="normal" image="chipmunk"/>
                                 <connections>
                                     <action selector="playChipmunk:" destination="v2g-ue-51u" eventType="touchUpInside" id="mfO-0I-b9z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KA6-4q-mu0">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KA6-4q-mu0">
+                                <rect key="frame" x="228" y="283" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0NB-CW-fQR"/>
+                                    <constraint firstAttribute="width" constant="100" id="4Su-2l-0yp"/>
+                                    <constraint firstAttribute="width" secondItem="KA6-4q-mu0" secondAttribute="height" multiplier="1:1" id="6hx-sk-ifz"/>
+                                </constraints>
                                 <state key="normal" image="vader"/>
                                 <connections>
                                     <action selector="playVader:" destination="v2g-ue-51u" eventType="touchUpInside" id="xQ8-Nt-of9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nef-m9-Cdc">
-                                <rect key="frame" x="-151" y="-128" width="303" height="256"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nef-m9-Cdc">
+                                <rect key="frame" x="162" y="514" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ErF-hA-dSG"/>
+                                    <constraint firstAttribute="height" constant="50" id="U47-Ks-rrX"/>
+                                    <constraint firstAttribute="width" secondItem="Nef-m9-Cdc" secondAttribute="height" multiplier="1:1" id="lLT-op-rSR"/>
+                                </constraints>
                                 <state key="normal" title="Share" image="share"/>
                                 <connections>
                                     <action selector="shareButton:" destination="v2g-ue-51u" eventType="touchUpInside" id="RmH-OZ-mhg"/>
@@ -154,6 +178,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A4r-uj-b6X" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="72" id="0fa-dA-m7W"/>
+                            <constraint firstItem="vSm-Nd-D2l" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leading" constant="52" id="5uz-jW-hv4"/>
+                            <constraint firstAttribute="trailing" secondItem="A4r-uj-b6X" secondAttribute="trailing" constant="47" id="CmN-iP-OAd"/>
+                            <constraint firstItem="HUL-ZX-I31" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leading" constant="52" id="OFw-WA-HZZ"/>
+                            <constraint firstItem="lxL-c7-hE3" firstAttribute="centerX" secondItem="aVO-8J-hjz" secondAttribute="centerX" id="PRs-pf-goQ"/>
+                            <constraint firstItem="vSm-Nd-D2l" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="72" id="R3c-6O-2A5"/>
+                            <constraint firstAttribute="trailing" secondItem="KA6-4q-mu0" secondAttribute="trailing" constant="47" id="V9w-3u-l4w"/>
+                            <constraint firstItem="lxL-c7-hE3" firstAttribute="top" secondItem="Nef-m9-Cdc" secondAttribute="bottom" constant="33" id="ZoW-DO-26R"/>
+                            <constraint firstItem="KA6-4q-mu0" firstAttribute="centerY" secondItem="aVO-8J-hjz" secondAttribute="centerY" id="Zsk-1E-wxx"/>
+                            <constraint firstItem="1OA-Gi-UBB" firstAttribute="top" secondItem="lxL-c7-hE3" secondAttribute="bottom" constant="20" id="cAK-Js-PNQ"/>
+                            <constraint firstItem="Nef-m9-Cdc" firstAttribute="centerX" secondItem="aVO-8J-hjz" secondAttribute="centerX" id="moO-i2-ejA"/>
+                            <constraint firstItem="HUL-ZX-I31" firstAttribute="centerY" secondItem="aVO-8J-hjz" secondAttribute="centerY" id="o8S-E1-hZT"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="vSm-Nd-D2l"/>
