@@ -28,6 +28,7 @@ class PlaySoundViewController: UIViewController {
         
         audioEngine = AVAudioEngine();
         audioFile = try! AVAudioFile(forReading: receivedAudio.filePathUrl as URL);
+        
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
         } catch _ {
@@ -70,7 +71,6 @@ class PlaySoundViewController: UIViewController {
         let pathArray = [dirPath, recordingName]
         let filePath = NSURL.fileURL(withPathComponents: pathArray)
         let filePathString = filePath?.absoluteString
-        print(filePathString)
         
         let activityItem = URL.init(fileURLWithPath: filePathString!)
         
@@ -109,6 +109,7 @@ class PlaySoundViewController: UIViewController {
         audioPlayer.rate = myRate;
         audioPlayer.currentTime = 0.0;
         audioPlayer.play();
+        
     }
     
     @IBAction func stopPlaying(_ sender: UIButton) {
