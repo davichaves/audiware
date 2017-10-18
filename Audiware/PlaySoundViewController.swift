@@ -64,21 +64,21 @@ class PlaySoundViewController: UIViewController {
     }
     
     @IBAction func shareButton(_ sender: UIButton) {
-//        let textToShare = "Swift is awesome!  Check out this website about it!"
-//        
-//        if let myWebsite = URL(string: "http://www.codingexplorer.com/") {
-//            let objectsToShare = [textToShare, myWebsite] as [Any]
-//            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
-//            
-//            self.present(activityVC, animated: true, completion: nil)
-//        }
         
-        let activityItem = URL.init(fileURLWithPath: Bundle.main.path(forResource: "fileName", ofType: "mp3")!)
+        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
+        let recordingName = "recording.wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = NSURL.fileURL(withPathComponents: pathArray)
+        let filePathString = filePath?.absoluteString
+        print(filePathString)
+        
+        let activityItem = URL.init(fileURLWithPath: filePathString!)
         
         let activityVC = UIActivityViewController(activityItems: [activityItem],applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = self.view
         
         self.present(activityVC, animated: true, completion: nil)
+        
     }
     
     func playAudioWithVariablePitch(_ pitch: Float) {
