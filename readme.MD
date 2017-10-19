@@ -23,5 +23,4 @@ iOS 9.0, or later
 
 ## Builds and Versions
 
-- 1.0 (Build 1) - First Version for beta testing through test flight
-- 1.0 (Build 2) - Added search and corrected general UI problems for iphone 6 and 7
+- 1.0 (Build 1) - First Version of the app
