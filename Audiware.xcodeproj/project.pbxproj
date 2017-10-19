@@ -231,6 +231,11 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = XK2N6ZPPDL;
 						LastSwiftMigration = 0820;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					B56122A01C3470FF0019A802 = {
 						CreatedOnToolsVersion = 7.2;
