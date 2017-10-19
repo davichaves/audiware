@@ -15,7 +15,7 @@ An iOS app to record your voice and share it to friends.
 
 ## Build Requirements
 
-Xcode 9.0 (iOS 9.0) or later
+Xcode 8.0 (iOS 9.0) or later
 
 ## Runtime Requirements
 
