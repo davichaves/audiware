@@ -103,11 +103,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSm-Nd-D2l">
-                                <rect key="frame" x="52" y="136" width="100" height="100"/>
+                                <rect key="frame" x="52" y="101" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="1GB-qz-qok"/>
+                                    <constraint firstAttribute="height" constant="100" id="62P-WY-8DC"/>
                                     <constraint firstAttribute="width" secondItem="vSm-Nd-D2l" secondAttribute="height" multiplier="1:1" id="Y5L-cC-x7a"/>
-                                    <constraint firstAttribute="width" constant="100" id="nGT-JU-qB7"/>
+                                    <constraint firstAttribute="width" constant="100" id="mhu-nt-h0L"/>
                                 </constraints>
                                 <state key="normal" image="slow"/>
                                 <connections>
@@ -115,11 +115,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4r-uj-b6X">
-                                <rect key="frame" x="228" y="136" width="100" height="100"/>
+                                <rect key="frame" x="228" y="101" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="A4r-uj-b6X" secondAttribute="height" multiplier="1:1" id="6iU-v0-6EH"/>
-                                    <constraint firstAttribute="width" constant="100" id="YAX-p2-KgV"/>
-                                    <constraint firstAttribute="height" constant="100" id="tbQ-VK-MPL"/>
+                                    <constraint firstAttribute="width" constant="100" id="Eri-nG-isP"/>
+                                    <constraint firstAttribute="height" constant="100" id="QKO-He-d9U"/>
                                 </constraints>
                                 <state key="normal" image="fast"/>
                                 <connections>
@@ -127,7 +127,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxL-c7-hE3">
-                                <rect key="frame" x="162" y="597" width="50" height="50"/>
+                                <rect key="frame" x="253" y="597" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lxL-c7-hE3" secondAttribute="height" multiplier="1:1" id="Pvb-b2-dbz"/>
                                     <constraint firstAttribute="width" constant="50" id="oXn-CZ-w0V"/>
@@ -140,34 +140,22 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUL-ZX-I31">
-                                <rect key="frame" x="52" y="283" width="100" height="100"/>
+                                <rect key="frame" x="52" y="241" width="100" height="100"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0J5-N1-W6D"/>
                                     <constraint firstAttribute="width" secondItem="HUL-ZX-I31" secondAttribute="height" multiplier="1:1" id="CfI-Pa-MeF"/>
-                                    <constraint firstAttribute="width" constant="100" id="FLL-ME-vNH"/>
-                                    <constraint firstAttribute="height" constant="100" id="KRm-QH-h6B"/>
+                                    <constraint firstAttribute="height" constant="100" id="zlX-KZ-cfx"/>
                                 </constraints>
                                 <state key="normal" image="chipmunk"/>
                                 <connections>
                                     <action selector="playChipmunk:" destination="v2g-ue-51u" eventType="touchUpInside" id="mfO-0I-b9z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KA6-4q-mu0">
-                                <rect key="frame" x="228" y="283" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="0NB-CW-fQR"/>
-                                    <constraint firstAttribute="width" constant="100" id="4Su-2l-0yp"/>
-                                    <constraint firstAttribute="width" secondItem="KA6-4q-mu0" secondAttribute="height" multiplier="1:1" id="6hx-sk-ifz"/>
-                                </constraints>
-                                <state key="normal" image="vader"/>
-                                <connections>
-                                    <action selector="playVader:" destination="v2g-ue-51u" eventType="touchUpInside" id="xQ8-Nt-of9"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nef-m9-Cdc">
-                                <rect key="frame" x="162" y="514" width="50" height="50"/>
+                                <rect key="frame" x="77" y="597" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="ErF-hA-dSG"/>
-                                    <constraint firstAttribute="height" constant="50" id="U47-Ks-rrX"/>
+                                    <constraint firstAttribute="width" constant="50" id="81i-Re-wb6"/>
+                                    <constraint firstAttribute="height" constant="50" id="Xl0-nv-B9I"/>
                                     <constraint firstAttribute="width" secondItem="Nef-m9-Cdc" secondAttribute="height" multiplier="1:1" id="lLT-op-rSR"/>
                                 </constraints>
                                 <state key="normal" title="Share" image="share"/>
@@ -175,21 +163,33 @@
                                     <action selector="shareButton:" destination="v2g-ue-51u" eventType="touchUpInside" id="RmH-OZ-mhg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KA6-4q-mu0">
+                                <rect key="frame" x="228" y="241" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KA6-4q-mu0" secondAttribute="height" multiplier="1:1" id="6hx-sk-ifz"/>
+                                    <constraint firstAttribute="width" constant="100" id="8zc-uK-b9e"/>
+                                    <constraint firstAttribute="height" constant="100" id="MA1-0F-q3h"/>
+                                </constraints>
+                                <state key="normal" image="vader"/>
+                                <connections>
+                                    <action selector="playVader:" destination="v2g-ue-51u" eventType="touchUpInside" id="xQ8-Nt-of9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="A4r-uj-b6X" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="72" id="0fa-dA-m7W"/>
-                            <constraint firstItem="vSm-Nd-D2l" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leading" constant="52" id="5uz-jW-hv4"/>
-                            <constraint firstAttribute="trailing" secondItem="A4r-uj-b6X" secondAttribute="trailing" constant="47" id="CmN-iP-OAd"/>
-                            <constraint firstItem="HUL-ZX-I31" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leading" constant="52" id="OFw-WA-HZZ"/>
-                            <constraint firstItem="lxL-c7-hE3" firstAttribute="centerX" secondItem="aVO-8J-hjz" secondAttribute="centerX" id="PRs-pf-goQ"/>
-                            <constraint firstItem="vSm-Nd-D2l" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="72" id="R3c-6O-2A5"/>
-                            <constraint firstAttribute="trailing" secondItem="KA6-4q-mu0" secondAttribute="trailing" constant="47" id="V9w-3u-l4w"/>
-                            <constraint firstItem="lxL-c7-hE3" firstAttribute="top" secondItem="Nef-m9-Cdc" secondAttribute="bottom" constant="33" id="ZoW-DO-26R"/>
-                            <constraint firstItem="KA6-4q-mu0" firstAttribute="centerY" secondItem="aVO-8J-hjz" secondAttribute="centerY" id="Zsk-1E-wxx"/>
-                            <constraint firstItem="1OA-Gi-UBB" firstAttribute="top" secondItem="lxL-c7-hE3" secondAttribute="bottom" constant="20" id="cAK-Js-PNQ"/>
-                            <constraint firstItem="Nef-m9-Cdc" firstAttribute="centerX" secondItem="aVO-8J-hjz" secondAttribute="centerX" id="moO-i2-ejA"/>
-                            <constraint firstItem="HUL-ZX-I31" firstAttribute="centerY" secondItem="aVO-8J-hjz" secondAttribute="centerY" id="o8S-E1-hZT"/>
+                            <constraint firstItem="vSm-Nd-D2l" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leading" constant="52" id="CiC-HN-52L"/>
+                            <constraint firstItem="A4r-uj-b6X" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="37" id="Ep8-W3-OPo"/>
+                            <constraint firstItem="KA6-4q-mu0" firstAttribute="top" secondItem="A4r-uj-b6X" secondAttribute="bottom" constant="40" id="Kw4-Ua-zSL"/>
+                            <constraint firstItem="HUL-ZX-I31" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leading" constant="52" id="PEN-um-XBo"/>
+                            <constraint firstItem="Nef-m9-Cdc" firstAttribute="leading" secondItem="aVO-8J-hjz" secondAttribute="leading" constant="77" id="QnR-nT-wFW"/>
+                            <constraint firstAttribute="trailing" secondItem="KA6-4q-mu0" secondAttribute="trailing" constant="47" id="X2S-VC-61j"/>
+                            <constraint firstItem="1OA-Gi-UBB" firstAttribute="top" secondItem="lxL-c7-hE3" secondAttribute="bottom" constant="20" id="j5B-n9-Xm6"/>
+                            <constraint firstItem="HUL-ZX-I31" firstAttribute="top" secondItem="vSm-Nd-D2l" secondAttribute="bottom" constant="40" id="nU3-g6-095"/>
+                            <constraint firstItem="1OA-Gi-UBB" firstAttribute="top" secondItem="Nef-m9-Cdc" secondAttribute="bottom" constant="20" id="rlM-Ef-ch6"/>
+                            <constraint firstAttribute="trailing" secondItem="lxL-c7-hE3" secondAttribute="trailing" constant="72" id="sjc-4I-aw6"/>
+                            <constraint firstItem="vSm-Nd-D2l" firstAttribute="top" secondItem="jfb-7y-H9I" secondAttribute="bottom" constant="37" id="tFE-UG-7nw"/>
+                            <constraint firstAttribute="trailing" secondItem="A4r-uj-b6X" secondAttribute="trailing" constant="47" id="w1v-w0-UHy"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -197,8 +197,8 @@
                                 <exclude reference="A4r-uj-b6X"/>
                                 <exclude reference="lxL-c7-hE3"/>
                                 <exclude reference="HUL-ZX-I31"/>
-                                <exclude reference="KA6-4q-mu0"/>
                                 <exclude reference="Nef-m9-Cdc"/>
+                                <exclude reference="KA6-4q-mu0"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -207,15 +207,15 @@
                                 <include reference="A4r-uj-b6X"/>
                                 <include reference="lxL-c7-hE3"/>
                                 <include reference="HUL-ZX-I31"/>
-                                <include reference="KA6-4q-mu0"/>
                                 <include reference="Nef-m9-Cdc"/>
+                                <include reference="KA6-4q-mu0"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7u-TY-q1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2034" y="351"/>
+            <point key="canvasLocation" x="2032.8" y="350.37481259370315"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="T1U-IQ-KKI">
@@ -237,12 +237,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chipmunk" width="256" height="256"/>
-        <image name="fast" width="256" height="256"/>
-        <image name="microphone" width="169" height="169"/>
-        <image name="share" width="256" height="256"/>
-        <image name="slow" width="256" height="256"/>
-        <image name="stop" width="256" height="256"/>
-        <image name="vader" width="256" height="256"/>
+        <image name="chipmunk" width="100" height="100"/>
+        <image name="fast" width="100" height="100"/>
+        <image name="microphone" width="100" height="100"/>
+        <image name="share" width="100" height="100"/>
+        <image name="slow" width="100" height="100"/>
+        <image name="stop" width="100" height="100"/>
+        <image name="vader" width="100" height="100"/>
     </resources>
 </document>

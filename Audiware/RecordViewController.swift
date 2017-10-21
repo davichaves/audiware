@@ -76,7 +76,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if self.interstitial.isReady {
-            self.interstitial.present(fromRootViewController: self)
+            // TODO: self.interstitial.present(fromRootViewController: self)
         }
         if(segue.identifier == "stopRecording") {
             let playSoundsVC:PlaySoundViewController = segue.destination as! PlaySoundViewController
