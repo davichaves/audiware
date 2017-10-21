@@ -20,13 +20,14 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9L-kh-dAN">
                                 <rect key="frame" x="137" y="283" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Teu-Rw-oil"/>
-                                    <constraint firstAttribute="height" constant="100" id="gwd-Af-xvn"/>
+                                    <constraint firstAttribute="height" constant="100" id="2La-d7-3gP"/>
+                                    <constraint firstAttribute="width" secondItem="E9L-kh-dAN" secondAttribute="height" multiplier="1:1" id="wzw-Pt-ujj"/>
+                                    <constraint firstAttribute="width" constant="100" id="yce-be-Evk"/>
                                 </constraints>
                                 <state key="normal" image="microphone"/>
                                 <connections>
@@ -35,7 +36,7 @@
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdL-LP-dm6">
-                                <rect key="frame" x="150.5" y="426" width="73.5" height="21"/>
+                                <rect key="frame" x="151" y="426" width="73.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -43,9 +44,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJe-eQ-sZG">
                                 <rect key="frame" x="162" y="597" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="DJe-eQ-sZG" secondAttribute="height" multiplier="1:1" id="AJb-Mr-Xk1"/>
-                                    <constraint firstAttribute="width" constant="50" id="chH-R7-Ob0"/>
-                                    <constraint firstAttribute="height" constant="50" id="qqS-pf-GDe"/>
+                                    <constraint firstAttribute="width" constant="50" id="A6T-VG-fCV"/>
+                                    <constraint firstAttribute="width" secondItem="DJe-eQ-sZG" secondAttribute="height" multiplier="1:1" id="Fuu-RD-jfj"/>
+                                    <constraint firstAttribute="height" constant="50" id="lfA-mX-0Ln"/>
                                 </constraints>
                                 <state key="normal" image="stop"/>
                                 <connections>
@@ -55,14 +56,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VdL-LP-dm6" firstAttribute="top" secondItem="E9L-kh-dAN" secondAttribute="bottom" constant="43" id="DHE-Qg-3Fj"/>
-                            <constraint firstAttribute="trailing" secondItem="DJe-eQ-sZG" secondAttribute="trailing" constant="163" id="Dih-fn-zf5"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DJe-eQ-sZG" secondAttribute="bottom" constant="20" id="G1x-Yg-tez"/>
-                            <constraint firstItem="DJe-eQ-sZG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="162" id="MfG-nE-9jl"/>
-                            <constraint firstItem="E9L-kh-dAN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dNh-fl-VrG"/>
-                            <constraint firstItem="VdL-LP-dm6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dNl-Km-zJd"/>
-                            <constraint firstItem="DJe-eQ-sZG" firstAttribute="top" secondItem="VdL-LP-dm6" secondAttribute="bottom" constant="150" id="ipD-F5-fxy"/>
-                            <constraint firstItem="E9L-kh-dAN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jFD-CN-Jro"/>
+                            <constraint firstItem="VdL-LP-dm6" firstAttribute="top" secondItem="E9L-kh-dAN" secondAttribute="bottom" constant="43" id="703-Wl-E5c"/>
+                            <constraint firstItem="E9L-kh-dAN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GrC-hP-4yd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DJe-eQ-sZG" secondAttribute="bottom" constant="20" id="VaP-Xg-mQP"/>
+                            <constraint firstItem="VdL-LP-dm6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X0D-Xf-u3q"/>
+                            <constraint firstItem="DJe-eQ-sZG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bMq-Td-R5o"/>
+                            <constraint firstItem="E9L-kh-dAN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xi0-gX-YnL"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -240,7 +239,7 @@
     <resources>
         <image name="chipmunk" width="256" height="256"/>
         <image name="fast" width="256" height="256"/>
-        <image name="microphone" width="256" height="256"/>
+        <image name="microphone" width="169" height="169"/>
         <image name="share" width="256" height="256"/>
         <image name="slow" width="256" height="256"/>
         <image name="stop" width="256" height="256"/>
